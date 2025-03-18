@@ -1,0 +1,222 @@
+.vinyl-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.vinyl-container {
+    display: flex;
+    flex-direction: row;  /* Places items in a horizontal row */
+    justify-content: center; /* Centers the row */
+    align-items: center;  /* Aligns items vertically */
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    gap: 20px; /* Adds spacing between items */
+}
+
+.vinyl-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5e1ce;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
+}
+
+.vinyl-item img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.vinyl-item img:hover {
+    transform: scale(1.1);
+}
+
+.genre-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #800020;
+    color:  whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-family: Oswald, sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.genre-button:hover {
+    background: #C56C86;
+    color: black;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #800020;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #C56C86;
+    border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fix Navbar Overlap */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(247, 247, 243);
+    color: #4a1c40;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Space for navbar */
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #f8f4ef; /* Beige */
+    color: #fcf2f1; /* Burgundy */
+    text-align: center;
+}
+
+.playlist-section {
+    width: 90%;
+    margin: 40px auto;
+    padding: 15px;
+    background: #FFDAB9; /* Light peach */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-section h2 {
+    font-family: "Yeseva One", serif;
+    background-color: #C56C86;
+    color:#f8f4ef; /* Dark Red */
+    margin-bottom: 15px;
+}
+
+.playlist {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto; /* Allows scrolling if too many songs */
+    padding: 10px;
+}
+
+.song {
+    background: #FFF5EE; /* Soft beige */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px; /* Smaller size */
+    min-width: 200px; /* Ensures uniform size */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.song:hover {
+    transform: scale(1.05);
+}
+
+.song img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.song-info h3 {
+    font-family: "Oswald", sans-serif;
+    color: #8B0000; /* Dark Burgundy */
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.song-info p {
+    color: #A52A2A; /* Brownish Red */
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Customize scrollbar */
+.playlist {
+    scrollbar-width: thin;
+    scrollbar-color: #800020 #FFDAB9; /* Burgundy for the scrollbar, peach for the track */
+}
+
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+.playlist::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height */
+}
+
+.playlist::-webkit-scrollbar-track {
+    background: #FFDAB9; /* Peach track */
+    border-radius: 10px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    background: #800020; /* Burgundy scrollbar */
+    border-radius: 10px;
+}
+
+.playlist::-webkit-scrollbar-thumb:hover {
+    background: #5A2A27; /* Darker burgundy on hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button-container button, button {
+    font-family: 'Oswald', sans-serif;
+    background-color: #b76e79;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-container button:hover, button:hover {
+    background-color: #9a4f5d;
+}
+
+h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 2rem;
+    color: #800020; /* Burgundy */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}

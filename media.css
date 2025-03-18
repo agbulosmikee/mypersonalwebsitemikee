@@ -1,0 +1,128 @@
+/* General Reset */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f8e8dc;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #800020;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #C56C86;
+    border-radius: 5px;
+}
+
+/* Media Header */
+.media-header {
+    padding: 50px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading */
+.media-header h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    color: #9b2c2c;
+    font-family: 'Yeseva One', serif;
+    color: #800000;
+    margin-top: 20px;
+    color: #dfbc24; /* Gold text color */
+    color: #dfbc24; /* Gold text color */
+    -webkit-text-stroke: 1px #800020; 
+    font-size: 5em; /* Larger for the main heading */
+    -webkit-text-stroke: 2px #800020; 
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+/* Film Set Lights */
+.film-light {
+    position: absolute;
+    top: 60px;  /* Adjusted to move the lights higher */
+    width: 140px; /* Increased size */
+}
+
+.left-light {
+    left: -3%; /* Adjust position slightly if needed */
+}
+
+.right-light {
+    right: -3%; /* Adjust position slightly if needed */
+}
+
+.film-light img {
+    width: 100%;
+}
+/* Red Carpet Design */
+.red-carpet {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #c91e1e, #9b2c2c);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+    color: #800020; /* Burgundy */
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;   /* Centers the cards horizontally */
+    align-items: center;
+    gap: 20px;                 /* Adds spacing between cards */
+    flex-wrap: wrap;           /* Allows wrapping on smaller screens */
+}
+
+.card {
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 300px;              /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);    /* Slight enlarge on hover */
+}
+
+

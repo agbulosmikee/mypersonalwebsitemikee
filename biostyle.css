@@ -1,0 +1,308 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fix Navbar Overlap */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: beige;
+    color: #4a1c40;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Space for navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #800020;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #C56C86;
+    border-radius: 5px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h1 {
+    font-family: 'Yeseva One', serif;
+    font-size: 2.8rem;
+    color: #A67B5B;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 2rem;
+    color: #800020;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adds space between image and button */
+}
+
+.image-wrapper img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.image-wrapper button {
+    width: 160px; /* Increase button width */
+    padding: 12px; /* Make button bigger */
+    font-size: 16px; /* Increase text size */
+    font-family: 'Oswald', sans-serif;
+    background-color: #b76e79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: -10px; /* Moves button closer to image */
+}
+
+.image-wrapper button:hover {
+    background-color: #9a4f5d;
+}
+
+
+/* Section Styling */
+.section {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #4a1c40;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button-container button, button {
+    font-family: 'Oswald', sans-serif;
+    background-color: #b76e79;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-container button:hover, button:hover {
+    background-color: #9a4f5d;
+}
+
+h1 {
+    font-family: 'Yeseva One', serif;
+    position: relative;
+    display: inline-block;
+    font-size: 5em;
+    color: #dfbc24; /* Gold text color */
+    color: #dfbc24; /* Gold text color */
+    -webkit-text-stroke: 1px #800020; 
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjusts spacing */
+    width: 100%;
+    height: 4px; /* Thickness of the gradient line */
+    background: linear-gradient(to right, #800020, #dfbc24, #800020); /* Burgundy → Gold → Burgundy */
+    border-radius: 10px;
+}
+
+.big-title {
+    font-size: 5em; /* Larger for the main heading */
+    -webkit-text-stroke: 2px #800020; 
+}
+
+.small-title {
+    font-size: 3em; /* Smaller for section headings */
+}
+
+h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 2rem;
+    color: #800020; /* Burgundy */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+nav button {
+    font-family: 'Oswald', sans-serif;
+    background-color: #b76e79; /* Rose Pink */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #9a4f5d;
+}
+
+/* Top Images */
+.top-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.top-images img {
+    width: 300px;
+    height: auto;
+}
+
+/* Section Styles */
+.section {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Yeseva One', serif;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+
+/* Paragraph Styling */
+p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #0f0f0f;
+}
+
+/* Gallery Section with Blurry Burgundy Background */
+.gallery-wrapper {
+    background: rgba(128, 0, 32, 0.6); /* Burgundy with transparency */
+    backdrop-filter: blur(10px); /* Blurry effect */
+    border-radius: 12px; /* Rounded edges */
+    padding: 15px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Image Container inside the Gallery */
+.gallery-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+
+/* Image Styling */
+.gallery-container img {
+    width: 170px; 
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.4s ease-in-out, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.gallery-container img:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/* Custom Pink Scrollbar */
+.gallery-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery-container::-webkit-scrollbar-track {
+    background: #f8c8dc; /* Soft pink */
+    border-radius: 10px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+    background: #d63384; /* Bright pink */
+    border-radius: 10px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb:hover {
+    background: #b82c6c; /* Darker pink on hover */
+}
+
